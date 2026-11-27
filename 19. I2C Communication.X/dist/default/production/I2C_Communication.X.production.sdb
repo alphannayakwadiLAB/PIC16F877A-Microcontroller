@@ -1,0 +1,380 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"39 D:\PIC16F877A\I2C Communication.X\newmain.c
+[v _LCD_Pulse LCD_Pulse `(v  1 e 1 0 ]
+"47
+[v _LCD_Nibble LCD_Nibble `(v  1 e 1 0 ]
+"53
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+"63
+[v _LCD_Data LCD_Data `(v  1 e 1 0 ]
+"73
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+"81
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"112
+[v _I2C_WaitFlag I2C_WaitFlag `(uc  1 e 1 0 ]
+"127
+[v _I2C_WaitIdle I2C_WaitIdle `(uc  1 e 1 0 ]
+"140
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+"154
+[v _I2C_Start I2C_Start `(uc  1 e 1 0 ]
+"165
+[v _I2C_Restart I2C_Restart `(uc  1 e 1 0 ]
+"176
+[v _I2C_Stop I2C_Stop `(uc  1 e 1 0 ]
+"187
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+"205
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+"236
+[v _DEC_TO_BCD DEC_TO_BCD `(uc  1 e 1 0 ]
+"241
+[v _BCD_TO_DEC BCD_TO_DEC `(uc  1 e 1 0 ]
+"246
+[v _RTC_SetTime RTC_SetTime `(uc  1 e 1 0 ]
+"281
+[v _RTC_ReadTime RTC_ReadTime `(uc  1 e 1 0 ]
+"317
+[v _ValidBCD ValidBCD `(uc  1 e 1 0 ]
+"328
+[v _RTC_Valid RTC_Valid `(uc  1 e 1 0 ]
+"372
+[v _DisplayClock DisplayClock `(v  1 e 1 0 ]
+"422
+[v _main main `(v  1 e 1 0 ]
+"340 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f877a.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S32 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S41 . 1 `S32 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES41  1 e 1 @12 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+[s S148 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"1771
+[u S157 . 1 `S148 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES157  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S54 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1884
+[s S63 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S68 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S74 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S79 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S84 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S89 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S94 . 1 `S54 1 . 1 0 `S63 1 . 1 0 `S68 1 . 1 0 `S74 1 . 1 0 `S79 1 . 1 0 `S84 1 . 1 0 `S89 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES94  1 e 1 @148 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"422 D:\PIC16F877A\I2C Communication.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"424
+[v main@rtc rtc `[7]uc  1 a 7 15 ]
+"473
+} 0
+"328
+[v _RTC_Valid RTC_Valid `(uc  1 e 1 0 ]
+{
+[v RTC_Valid@d d `*.4uc  1 a 1 wreg ]
+"331
+[v RTC_Valid@month month `uc  1 a 1 4 ]
+[v RTC_Valid@date date `uc  1 a 1 3 ]
+"330
+[v RTC_Valid@hour hour `uc  1 a 1 2 ]
+[v RTC_Valid@min min `uc  1 a 1 1 ]
+[v RTC_Valid@sec sec `uc  1 a 1 0 ]
+"328
+[v RTC_Valid@d d `*.4uc  1 a 1 wreg ]
+"333
+[v RTC_Valid@d d `*.4uc  1 a 1 5 ]
+"366
+} 0
+"317
+[v _ValidBCD ValidBCD `(uc  1 e 1 0 ]
+{
+[v ValidBCD@value value `uc  1 a 1 wreg ]
+[v ValidBCD@value value `uc  1 a 1 wreg ]
+"319
+[v ValidBCD@value value `uc  1 a 1 2 ]
+"326
+} 0
+"246
+[v _RTC_SetTime RTC_SetTime `(uc  1 e 1 0 ]
+{
+"248
+[v RTC_SetTime@values values `[7]uc  1 a 7 7 ]
+"249
+[v RTC_SetTime@i i `uc  1 a 1 14 ]
+"279
+} 0
+"236
+[v _DEC_TO_BCD DEC_TO_BCD `(uc  1 e 1 0 ]
+{
+[v DEC_TO_BCD@value value `uc  1 a 1 wreg ]
+[v DEC_TO_BCD@value value `uc  1 a 1 wreg ]
+"238
+[v DEC_TO_BCD@value value `uc  1 a 1 9 ]
+"239
+} 0
+"281
+[v _RTC_ReadTime RTC_ReadTime `(uc  1 e 1 0 ]
+{
+[v RTC_ReadTime@data data `*.4uc  1 a 1 wreg ]
+"283
+[v RTC_ReadTime@i i `uc  1 a 1 7 ]
+"281
+[v RTC_ReadTime@data data `*.4uc  1 a 1 wreg ]
+"285
+[v RTC_ReadTime@data data `*.4uc  1 a 1 6 ]
+"311
+} 0
+"187
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Write@data data `uc  1 a 1 wreg ]
+[v I2C_Write@data data `uc  1 a 1 wreg ]
+"189
+[v I2C_Write@data data `uc  1 a 1 2 ]
+"203
+} 0
+"176
+[v _I2C_Stop I2C_Stop `(uc  1 e 1 0 ]
+{
+"185
+} 0
+"154
+[v _I2C_Start I2C_Start `(uc  1 e 1 0 ]
+{
+"163
+} 0
+"165
+[v _I2C_Restart I2C_Restart `(uc  1 e 1 0 ]
+{
+"174
+} 0
+"205
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+{
+[v I2C_Read@send_ack send_ack `uc  1 a 1 wreg ]
+[v I2C_Read@send_ack send_ack `uc  1 a 1 wreg ]
+"206
+[v I2C_Read@data data `*.4uc  1 p 1 2 ]
+"208
+[v I2C_Read@send_ack send_ack `uc  1 a 1 4 ]
+"230
+} 0
+"127
+[v _I2C_WaitIdle I2C_WaitIdle `(uc  1 e 1 0 ]
+{
+"129
+[v I2C_WaitIdle@timeout timeout `ui  1 a 2 0 ]
+"138
+} 0
+"112
+[v _I2C_WaitFlag I2C_WaitFlag `(uc  1 e 1 0 ]
+{
+"114
+[v I2C_WaitFlag@timeout timeout `ui  1 a 2 0 ]
+"125
+} 0
+"81
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"106
+} 0
+"140
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+{
+"152
+} 0
+"372
+[v _DisplayClock DisplayClock `(v  1 e 1 0 ]
+{
+[v DisplayClock@d d `*.4uc  1 a 1 wreg ]
+"375
+[v DisplayClock@year year `uc  1 a 1 5 ]
+[v DisplayClock@month month `uc  1 a 1 4 ]
+[v DisplayClock@date date `uc  1 a 1 3 ]
+"374
+[v DisplayClock@hour hour `uc  1 a 1 2 ]
+[v DisplayClock@min min `uc  1 a 1 1 ]
+[v DisplayClock@sec sec `uc  1 a 1 0 ]
+"372
+[v DisplayClock@d d `*.4uc  1 a 1 wreg ]
+"377
+[v DisplayClock@d d `*.4uc  1 a 1 6 ]
+"416
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"73 D:\PIC16F877A\I2C Communication.X\newmain.c
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+{
+[v LCD_String@str str `*.24DCuc  1 a 1 wreg ]
+[v LCD_String@str str `*.24DCuc  1 a 1 wreg ]
+[v LCD_String@str str `*.24DCuc  1 a 1 7 ]
+"79
+} 0
+"63
+[v _LCD_Data LCD_Data `(v  1 e 1 0 ]
+{
+[v LCD_Data@data data `uc  1 a 1 wreg ]
+[v LCD_Data@data data `uc  1 a 1 wreg ]
+"65
+[v LCD_Data@data data `uc  1 a 1 5 ]
+"71
+} 0
+"53
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+{
+[v LCD_Command@cmd cmd `uc  1 a 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 a 1 wreg ]
+"55
+[v LCD_Command@cmd cmd `uc  1 a 1 5 ]
+"61
+} 0
+"47
+[v _LCD_Nibble LCD_Nibble `(v  1 e 1 0 ]
+{
+[v LCD_Nibble@data data `uc  1 a 1 wreg ]
+[v LCD_Nibble@data data `uc  1 a 1 wreg ]
+"49
+[v LCD_Nibble@data data `uc  1 a 1 2 ]
+"51
+} 0
+"39
+[v _LCD_Pulse LCD_Pulse `(v  1 e 1 0 ]
+{
+"45
+} 0
+"241
+[v _BCD_TO_DEC BCD_TO_DEC `(uc  1 e 1 0 ]
+{
+[v BCD_TO_DEC@value value `uc  1 a 1 wreg ]
+[v BCD_TO_DEC@value value `uc  1 a 1 wreg ]
+"243
+[v BCD_TO_DEC@value value `uc  1 a 1 7 ]
+"244
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
